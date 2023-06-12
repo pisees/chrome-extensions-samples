@@ -3,6 +3,9 @@ console.log('sw-tips.js');
 // Fetch tip & save in storage
 const updateTip = async () => {
   const response = await fetch('https://extension-tips.glitch.me/tips.json');
+  /*const response = await fetch('https://extension-tips.glitch.me/tips.json', {
+    mode: 'no-cors' // ‘cors’ by default.
+  });*/
   const tips = await response.json();
   const randomIndex = Math.floor(Math.random() * tips.length);
   return chrome.storage.local.set({ tip: tips[randomIndex] });

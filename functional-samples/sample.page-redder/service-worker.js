@@ -1,5 +1,6 @@
 function reddenPage() {
-  document.body.style.backgroundColor = 'red';
+  //document.body.style.backgroundColor = 'red';
+  alert("hi");
 }
 
 chrome.action.onClicked.addListener((tab) => {

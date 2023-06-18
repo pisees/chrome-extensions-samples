@@ -10,8 +10,6 @@
         ],
         "js": ["content.js"]
     }],
-    "browser_action": {
-    },
     "background": {
       "service_worker": "background.js"
     },

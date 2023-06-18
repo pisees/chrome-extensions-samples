@@ -1,9 +1,8 @@
   {
-    "version": "1.0",
+    "version": "1.1",
     "manifest_version": 3,
     "name": "Hello World",
     "description": "This extension to test html injection",
-    "version": "1.0",
     "content_scripts": [{
         "matches": [
             "https://*/*",
@@ -14,11 +13,19 @@
     "browser_action": {
     },
     "background": {
-        "scripts":["background.js"],
+      "service_worker": "background.js"
+    },
     "action": {},
     "permissions": [
-        "activeTab"
+        "activeTab",
+        "tabs"
     ],
-    "web_accessible_resources": ["popup.html"]
-  }
+    "web_accessible_resources": [
+      { 
+        "resources": ["popup.html"], 
+        "matches": ["*://*/*"], 
+        "use_dynamic_url": true 
+      }    
+    ]
 }
+

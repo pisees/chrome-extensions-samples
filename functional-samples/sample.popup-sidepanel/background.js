@@ -1,3 +1,4 @@
-chrome.browserAction.onClicked.addListener(function(tab){
+chrome.action.onClicked.addListener(tab => {
     chrome.tabs.sendMessage(tab.id,"toggle");
-});
+    console.log('message sent');
+  });

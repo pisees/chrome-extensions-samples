@@ -19,16 +19,17 @@
     "clipboardWrite"
   ],
   "host_permissions": [
-    "https://httpbin.org"
+    "https://www.bing.com/"
   ],
   "background": {
     "service_worker": "background.js"
   },
   "content_scripts": [
     {
+      "run_at": "document_end",
       "matches": ["<all_urls>"],
-      "js": ["content.js"],
-      "css": ["style.css"]
+      "js": ["content/word_count.js"],
+      "css": ["content/style.css"]
     }
   ]
 }

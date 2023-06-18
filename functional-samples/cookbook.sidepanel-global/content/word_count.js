@@ -38,10 +38,7 @@ if (article) {
   badge.textContent = `⏱️ ${readingTime} min read`;
 
   // Support for API reference docs
-  const heading = article.querySelector('h1');
-  // Support for article docs with date
-  const date = article.querySelector('time')?.parentNode;
-
-  // https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentElement
+  const heading = article.querySelector('Title');
   (date ?? heading).insertAdjacentElement('afterend', badge);
+
 }

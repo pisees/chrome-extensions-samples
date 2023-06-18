@@ -1,0 +1,7 @@
+ERROR 1
+=======
+Uncaught (in promise) Error: Could not establish connection. Receiving end does not exist.
+Context
+background.js
+Stack Trace
+background.js:0 (anonymous function)

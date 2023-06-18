@@ -21,8 +21,7 @@
     "web_accessible_resources": [
       { 
         "resources": ["popup.html"], 
-        "matches": ["*://*/*"]
-      }    
+        "matches": ["*://*/*"]      }    
     ]
 }
 

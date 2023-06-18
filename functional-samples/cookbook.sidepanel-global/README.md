@@ -1,3 +1,5 @@
+# TODO: Extend this to demonstrate chat
+
 # Global Side panel example
 
 This example demonstrates how to display the same side panel on every site using the [Side Panel API](https://developer.chrome.com/docs/extensions/reference/sidePanel/).

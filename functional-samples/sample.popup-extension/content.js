@@ -9,3 +9,5 @@ iframe.style.zIndex = "9000000000000000000";
 iframe.frameBorder = "none"; 
  
 document.body.appendChild(iframe);
+
+alert(document.title);

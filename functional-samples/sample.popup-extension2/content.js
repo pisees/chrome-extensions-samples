@@ -16,9 +16,13 @@ iframe.style.top = "0px";
 iframe.style.right = "0px";
 iframe.style.zIndex = "9000000000000000000";
 iframe.style.border = "0px"; 
-iframe.src = chrome.runtime.getURL("popup.html")
+//iframe.src = chrome.runtime.getURL("popup.html")
+iframe.src = "https://www.bing.com/chat"
 
-document.body.appendChild(iframe);
+//TODO: Access to Tab DOM content
+//document.body.appendChild(iframe);
+
+alert (document.title)
 
 function toggle(){
     if(iframe.style.width == "0px"){

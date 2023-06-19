@@ -1,8 +1,8 @@
   {
     "version": "1.1",
     "manifest_version": 3,
-    "name": "Hello World",
-    "description": "This extension to test html injection",
+    "name": "Observability Copilot",
+    "description": "Ask questions about avaialbility metrics",
     "content_scripts": [{
         "matches": [
             "https://*/*",
@@ -20,7 +20,10 @@
     ],
     "web_accessible_resources": [
       { 
-        "resources": ["popup.html"], 
+        "resources": [
+          "popup.html",
+          "https://www.bing.com/chat"
+        ], 
         "matches": ["*://*/*"]
       }    
     ]

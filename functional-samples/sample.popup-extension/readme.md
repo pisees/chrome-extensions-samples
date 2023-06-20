@@ -1,1 +1,0 @@
-Based on https://stackoverflow.com/questions/39610205/how-to-make-side-panel-in-chrome-extension

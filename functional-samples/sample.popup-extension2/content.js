@@ -26,7 +26,7 @@ iframe.src = "https://www.bing.com/chat"
 
 document.body.appendChild(iframe);
 
-const accessToken = getAccessToken();
+//const accessToken = getAccessToken();
 //TODO: Access to Tab DOM content
 //alert (accessToken)
 
